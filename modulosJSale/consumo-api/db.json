@@ -1,0 +1,24 @@
+{
+  "compras": [
+    {
+      "item": "leite",
+      "quantidade": 2,
+      "id": 3
+    },
+    {
+      "item": "oleo",
+      "quantidade": 4,
+      "id": 4
+    },
+    {
+      "item": "cacau",
+      "quantidade": 3,
+      "id": 5
+    },
+    {
+      "item": "vinho",
+      "quantidade": 2,
+      "id": 6
+    }
+  ]
+}
