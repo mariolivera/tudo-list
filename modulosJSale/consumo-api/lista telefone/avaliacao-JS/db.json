@@ -1,0 +1,22 @@
+{
+    "lista": [
+        {
+            "id": 1,
+            "nome": "pessoa 1",
+            "telefone": "85 98888-8888",
+            "cidade": "Fortaleza"
+        },
+        {
+            "id": 2,
+            "nome": "pessoa2",
+            "telefone": "85 97777-7777",
+            "cidade": "Caucaia"
+        },
+        {
+            "id": 3,
+            "nome": "pessoa3",
+            "telefone": "85 9666-66666",
+            "cidade": "Caucaia"
+        }
+    ]
+}    
