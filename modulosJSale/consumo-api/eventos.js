@@ -1,5 +1,11 @@
 const API_url = 'http://localhost:8002'
+function marcarTodos(){
+    let todos= document.querySelectorAll('[data-check="acao"]');
 
+    todos.forEach((cadaCheck) => {
+        cadaCheck.checked = true;
+    });
+}
 
 
 function buscarparaeditar(id){     //aqui é uma busca para o editar
@@ -87,6 +93,7 @@ function atualizarlista(){
             lista.forEach(function (cadaItem){
                tabela_compras.innerHTML +=`
                <tr>
+                    <td><input data-check="acao" type="checkbox" ></td>
                     <td>${cadaItem.id}</td>
                     <td>${cadaItem.item}</td>
                     <td>${cadaItem.quantidade}</td>
@@ -94,11 +101,9 @@ function atualizarlista(){
                         <button onclick="buscarparaeditar(${cadaItem.id})" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEditar" class="btn btn-warning btn-sm">
                             Editar
                         </button>
-
                         <button onclick="excluir(${cadaItem.id})" class="btn btn-danger">
                             excluir
                         </button>
-
                        
                     </td>    
                 </tr>    
@@ -108,4 +113,3 @@ function atualizarlista(){
 }
 
 atualizarlista();
-
