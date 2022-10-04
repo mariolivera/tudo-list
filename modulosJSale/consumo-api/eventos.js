@@ -1,10 +1,13 @@
-const API_url = 'http://localhost:8002'
+const API_url = 'http://localhost:8003'
+
 function marcarTodos(){
     let todos= document.querySelectorAll('[data-check="acao"]');
 
     todos.forEach((cadaCheck) => {
-        cadaCheck.checked = true;
+        
+        cadaCheck.checked = check_all.checked;
     });
+    acionarBotaoExcluir()
 }
 
 
@@ -93,7 +96,7 @@ function atualizarlista(){
             lista.forEach(function (cadaItem){
                tabela_compras.innerHTML +=`
                <tr>
-                    <td><input data-check="acao" type="checkbox" ></td>
+                    <td><input onclick= "acionarBotaoExcluir()" value="${cadaItem.id}" data-check="acao" type="checkbox" ></td>
                     <td>${cadaItem.id}</td>
                     <td>${cadaItem.item}</td>
                     <td>${cadaItem.quantidade}</td>

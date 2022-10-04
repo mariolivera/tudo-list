@@ -21,6 +21,11 @@
                    placeholder="Buscar Item">
         </div>
         <div class="col text-end">
+
+            <button onclick="excluirselecionados()" id="btn_remove_all" class=" btn btn-outline-danger mb-3 d-none">
+                Excluir itens selecionado(s)
+            </button>
+
             <button type="button" 
                     class="btn btn-primary mb-3" 
                     data-bs-toggle="modal" 
@@ -33,7 +38,7 @@
     <table class="table table-striped table-hover" >
         <thead>
             <tr>
-                <th><input onclick="marcarTodos()" type="checkbox" ></th>
+                <th><input id="check_all" onclick="marcarTodos()" type="checkbox" ></th>
                 <th>ID</th>
                 <th>Item</th>
                 <th>Quantidade</th>
@@ -115,5 +120,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="eventos.js"></script>
     <script src="filtrar.js"></script>
+    <script src="excluir.js"></script>
 </body>
 </html>
